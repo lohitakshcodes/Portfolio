@@ -13,12 +13,6 @@ const Contact = () => {
             link: 'mailto:lohitakshbisen@gmail.com'
         },
         {
-            icon: HiPhone,
-            label: 'Phone',
-            value: '+91 7389592662',
-            link: 'tel:+917389592662'
-        },
-        {
             icon: HiLocationMarker,
             label: 'Location',
             value: 'Pune, Maharashtra, India',
