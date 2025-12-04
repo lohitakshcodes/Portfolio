@@ -84,7 +84,7 @@ const Home = () => {
                                     </p>
                                     <div className="bg-orange-100 border-l-4 border-orange-500 p-4 rounded-lg mb-4">
                                         <p className="text-gray-800 font-semibold mb-2">
-                                            🏖️ Are you a cafe owner?
+                                            🏖️ Are you a cafe/hostel owner?
                                         </p>
                                         <p className="text-gray-700 text-sm mb-3">
                                             I have a special barter deal for you!
