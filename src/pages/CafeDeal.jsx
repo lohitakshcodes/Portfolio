@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { HiArrowLeft, HiCheckCircle } from 'react-icons/hi';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
-import { fadeInUp } from '../utils/animations';
 
 const CafeDeal = () => {
     const deliverables = [
