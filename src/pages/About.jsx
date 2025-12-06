@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
-import { fadeInUp, slideInLeft, slideInRight } from '../utils/animations';
+import { slideInLeft, slideInRight } from '../utils/animations';
 import {
     FaReact, FaNodeJs, FaPython, FaFigma, FaGitAlt,
     FaHtml5, FaCss3Alt, FaJs
