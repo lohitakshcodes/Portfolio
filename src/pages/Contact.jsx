@@ -22,7 +22,7 @@ const Contact = () => {
 
     const socialLinks = [
         { icon: FaGithub, label: 'GitHub', url: 'https://github.com/lohitakshcodes', color: 'hover:text-gray-900' },
-        { icon: FaLinkedin, label: 'LinkedIn', url: 'www.linkedin.com/in/lohitakshbisen', color: 'hover:text-blue-600' },
+        { icon: FaLinkedin, label: 'LinkedIn', url: 'https://linkedin.com/in/lohitakshbisen', color: 'hover:text-blue-600' },
     ];
 
     return (
