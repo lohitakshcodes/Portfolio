@@ -11,6 +11,7 @@ import {
 } from 'react-icons/si';
 
 import profileImage from '../assets/profile.jpeg';
+import Head from '../components/Head'
 
 const About = () => {
     const skills = [
@@ -46,6 +47,10 @@ const About = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
+            <Head
+                title={`About — Lohitaksh Bisen`}
+                description={`About Lohitaksh Bisen — skills, experience and background.`}
+            />
             <div className="container-custom px-6">
                 {/* Header */}
                 <ScrollReveal>

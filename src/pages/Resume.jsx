@@ -3,6 +3,7 @@ import { HiDownload, HiBriefcase, HiAcademicCap } from 'react-icons/hi';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
 import { fadeInUp } from '../utils/animations';
+import Head from '../components/Head'
 
 const Resume = () => {
     const experience = [];
@@ -26,6 +27,10 @@ const Resume = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
+            <Head
+                title={`Resume — Lohitaksh Bisen`}
+                description={`Resume and CV of Lohitaksh Bisen — experience, education, skills.`}
+            />
             <div className="container-custom px-6">
                 {/* Header */}
                 <ScrollReveal>

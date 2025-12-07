@@ -3,6 +3,7 @@ import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
+import Head from '../components/Head'
 
 const Contact = () => {
     const contactInfo = [
@@ -27,6 +28,10 @@ const Contact = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
+            <Head
+                title={`Contact — Lohitaksh Bisen`}
+                description={`Get in touch with Lohitaksh Bisen — contact, email and socials.`}
+                />
             <div className="container-custom px-6">
                 {/* Header */}
                 <ScrollReveal>

@@ -5,10 +5,15 @@ import FloatingElement from '../components/FloatingElement';
 import MouseParallax from '../components/MouseParallax';
 import ScrollReveal from '../components/ScrollReveal';
 import { fadeInUp, staggerContainer } from '../utils/animations';
+import Head from '../components/Head'
 
 const Home = () => {
     return (
         <div className="min-h-screen">
+            <Head
+                title={`Home — Lohitaksh Bisen`}
+                description={`Lohitaksh Bisen — I build websites. Frontend developer focused on React and Tailwind.`}
+            />
             {/* Hero Section */}
             <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
                 {/* Animated Background Elements */}
