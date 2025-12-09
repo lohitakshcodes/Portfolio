@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async'
 const DEFAULTS = {
   title: 'Lohitaksh Bisen — Portfolio',
   description: 'Lohitaksh Bisen — web developer building clean, fast websites and small web apps.',
-  image: '/og-image.svg'
+  image: '/og-image.png'
 }
 
 export default function Head({ title, description, url, image, jsonLd }) {

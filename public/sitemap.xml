@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lohitakshcodes.github.io/Portfolio/</loc>
+    <loc>/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lohitakshcodes.github.io/Portfolio/about</loc>
+    <loc>/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lohitakshcodes.github.io/Portfolio/projects</loc>
+    <loc>/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lohitakshcodes.github.io/Portfolio/contact</loc>
+    <loc>/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lohitakshcodes.github.io/Portfolio/resume</loc>
+    <loc>/resume</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
