@@ -109,22 +109,22 @@ const Navigation = () => {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="md:hidden overflow-hidden"
+                            transition={{ duration: 0.25 }}
+                            className="md:hidden overflow-hidden bg-white/95 backdrop-blur-sm shadow-xl rounded-b-xl"
                         >
-                            <div className="pt-4 pb-2 space-y-2">
+                            <div className="pt-4 pb-4 px-3 space-y-2">
                                 {navItems.map((item, index) => (
                                     <motion.div
                                         key={item.path}
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: index * 0.1 }}
+                                        transition={{ delay: index * 0.06 }}
                                     >
                                         <Link
                                             to={item.path}
-                                            className={`block py-2 px-4 rounded-lg transition-colors ${location.pathname === item.path
-                                                ? 'bg-primary-100 text-primary-600'
-                                                : 'text-gray-700 hover:bg-gray-100'
+                                            className={`block py-3 px-4 rounded-lg transition-colors font-medium ${location.pathname === item.path
+                                                ? 'bg-primary-100 text-primary-700'
+                                                : 'text-gray-900 hover:bg-gray-100'
                                                 }`}
                                         >
                                             {item.name}
