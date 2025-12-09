@@ -9,8 +9,8 @@ const CafeDeal = () => {
     const deliverables = [
         {
             icon: '🎥',
-            title: '3 Reels',
-            description: 'High-quality Instagram reels showcasing your cafe, food, and ambiance'
+            title: 'Professional Photo Set',
+            description: '20–30 edited photos of your food, space, and vibe for Instagram and Google Maps.'
         },
         {
             icon: '📸',
