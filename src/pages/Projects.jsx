@@ -4,7 +4,6 @@ import { HiExternalLink, HiCode } from 'react-icons/hi';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
 import { scaleIn } from '../utils/animations';
-import Head from '../components/Head'
 
 const Projects = () => {
     const projects = [
@@ -28,10 +27,6 @@ const Projects = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
-            <Head
-                title={`Projects — Lohitaksh Bisen`}
-                description={`Selected projects by Lohitaksh Bisen — case studies and links.`}
-            />
             <div className="container-custom px-6">
                 {/* Header */}
                 <ScrollReveal>

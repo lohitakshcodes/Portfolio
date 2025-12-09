@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
 import { fadeInUp, slideInLeft, slideInRight } from '../utils/animations';
-import Head from '../components/Head'
 
 const GoaCafe = () => {
     const challenges = [
@@ -49,10 +48,6 @@ const GoaCafe = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
-            <Head
-                title={`Goa Cafe — Lohitaksh Bisen`}
-                description={`Goa Cafe case study — branding, content and social growth.`}
-            />
             {/* Back Button */}
             <div className="container-custom px-6 mb-8">
                 <Link to="/projects">

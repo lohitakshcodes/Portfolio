@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { HiArrowLeft, HiCheckCircle } from 'react-icons/hi';
 import ScrollReveal from '../components/ScrollReveal';
 import FloatingElement from '../components/FloatingElement';
-import Head from '../components/Head'
 
 const CafeDeal = () => {
     const deliverables = [
@@ -41,10 +40,6 @@ const CafeDeal = () => {
 
     return (
         <div className="min-h-screen pt-32 pb-20">
-            <Head
-                title={`Cafe Deal — Lohitaksh Bisen`}
-                description={`Cafe barter deal — digital transformation in exchange for stay and meals.`}
-            />
             {/* Back Button */}
             <div className="container-custom px-6 mb-8">
                 <Link to="/">
