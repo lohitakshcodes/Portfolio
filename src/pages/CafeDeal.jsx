@@ -13,6 +13,11 @@ const CafeDeal = () => {
             description: '20–30 edited photos of your food, space, and vibe for Instagram and Google Maps.'
         },
         {
+            icon: '🌐',
+            title: 'Static Website',
+            description: 'Beautiful, responsive website to showcase your menu, location, and story'
+        },
+        {
             icon: '📸',
             title: 'Instagram Revamp',
             description: 'Complete Instagram profile makeover with cohesive branding and aesthetic'
@@ -21,11 +26,6 @@ const CafeDeal = () => {
             icon: '🗺️',
             title: 'Google Maps Revamp',
             description: 'Optimized Google Maps listing with professional photos and information'
-        },
-        {
-            icon: '🌐',
-            title: 'Static Website',
-            description: 'Beautiful, responsive website to showcase your menu, location, and story'
         },
         {
             icon: '🔧',
