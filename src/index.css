@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    --color-bg-primary: #fafafa;
-    --color-bg-secondary: #ffffff;
-    --color-text-primary: #1a1a1a;
-    --color-text-secondary: #6b7280;
+    --color-bg-primary: #f8fafc; /* neutral-50 */
+    --color-bg-secondary: #ffffff; /* white */
+    --color-text-primary: #0f172a; /* slate-900 */
+    --color-text-secondary: #475569; /* slate-600 */
   }
 
   html {
@@ -17,7 +17,7 @@
   }
 
   body {
-    @apply bg-gradient-to-br from-teal-50 via-cyan-50 to-blue-50 text-gray-900 font-sans antialiased;
+    @apply bg-[color:var(--color-bg-primary)] text-[color:var(--color-text-primary)] font-sans antialiased;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -33,57 +33,63 @@
   }
 
   h1 {
-    @apply text-5xl md:text-6xl lg:text-7xl;
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-2xl md:text-3xl lg:text-4xl leading-snug;
   }
 
   h3 {
-    @apply text-3xl md:text-4xl;
+    @apply text-xl md:text-2xl;
   }
 
   h4 {
-    @apply text-2xl md:text-3xl;
+    @apply text-lg md:text-xl;
   }
 }
 
 @layer components {
   .glass-effect {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+    @apply bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm;
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95;
+    @apply px-5 py-2.5 bg-primary-600 text-white rounded-md font-semibold shadow-sm hover:shadow-md transition transform hover:-translate-y-[1px];
   }
 
   .btn-secondary {
-    @apply px-6 py-3 bg-white/80 backdrop-blur-sm text-gray-900 rounded-full font-semibold border border-gray-200 hover:border-primary-400 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95;
+    @apply px-4 py-2 bg-white text-[color:var(--color-text-primary)] rounded-md font-medium border border-gray-200 shadow-sm hover:shadow-md transition;
   }
 
   .card {
-    @apply bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-white/50;
+    @apply bg-white rounded-2xl p-6 shadow-sm transition-shadow duration-300 border border-gray-100;
   }
 
   .card-hover {
-    @apply hover:-translate-y-2 hover:scale-[1.02];
+    @apply hover:-translate-y-1 hover:shadow-md;
   }
 
   .section-padding {
-    @apply py-20 px-6 md:px-12 lg:px-24;
+    @apply py-16 px-6 md:px-12 lg:px-24;
   }
 
   .container-custom {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-6xl mx-auto px-4;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200 focus:border-primary-400 focus:ring-2 focus:ring-primary-200 outline-none transition-all duration-300;
+    @apply w-full px-4 py-3 rounded-md bg-white border border-gray-200 focus:border-primary-400 focus:ring-2 focus:ring-primary-100 outline-none transition;
   }
 
+  /* Replace flashy gradient headings with a clean solid accent */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 via-purple-500 to-pink-500 bg-clip-text text-transparent;
+    @apply text-[color:var(--color-text-primary)] font-display font-bold;
+  }
+
+  /* New utility for subtle accent headings when desired */
+  .heading-accent {
+    @apply text-primary-600;
   }
 }
 
@@ -115,10 +121,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #0ea5e9, #8b5cf6);
-  border-radius: 5px;
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #0284c7, #7c3aed);
+  background: #94a3b8; /* slate-400 */
 }
